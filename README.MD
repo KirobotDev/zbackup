@@ -157,7 +157,7 @@ Coming soon...
 
 <p align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=KirobotDev&theme=github_dark">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=KirobotDev&repo=zbackup&theme=github_dark">
 
 </p>
 
