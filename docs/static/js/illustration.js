@@ -239,13 +239,14 @@
       const finalR = n.r * pulse;
 
       const outerR = finalR + 6 + mouseInfluence;
-      const outerGrad = ctx.createRadialGradient(n.x, n.y, finalR * 0.5, n.x, n.y, outerR);
-      outerGrad.addColorStop(0, n.color.replace(')', ', 0.15)').replace('#', 'rgba('));
-      outerGrad.addColorStop(1, 'rgba(199, 241, 46, 0)');
 
       const r = parseInt(n.color.slice(1, 3), 16);
       const g = parseInt(n.color.slice(3, 5), 16);
       const b = parseInt(n.color.slice(5, 7), 16);
+
+      const outerGrad = ctx.createRadialGradient(n.x, n.y, finalR * 0.5, n.x, n.y, outerR);
+      outerGrad.addColorStop(0, `rgba(${r}, ${g}, ${b}, 0.15)`);
+      outerGrad.addColorStop(1, 'rgba(199, 241, 46, 0)');
 
       const g1 = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, outerR);
       g1.addColorStop(0, `rgba(${r}, ${g}, ${b}, 0.12)`);
