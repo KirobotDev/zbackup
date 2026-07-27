@@ -157,7 +157,7 @@ Coming soon...
 
 <p align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=kirobotdev&repo=ZBackup&theme=transparent">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=kirobotdev&repo=zbackup&theme=transparent">
 
 </p>
 
