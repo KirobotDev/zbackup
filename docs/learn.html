@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn ZBackup - Tutorials, Guides &amp; Quick Start</title>
+  <meta name="description" content="Learn how to use ZBackup with step-by-step tutorials, quick start guides, and documentation. Create your first backup in minutes.">
+  <meta name="keywords" content="ZBackup tutorial, backup guide, quick start, learn backup, Python backup tutorial, CLI backup, backup tutorial beginner">
+  <meta name="author" content="KirobotDev">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kirobotdev.github.io/zbackup/learn.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Learn ZBackup - Tutorials, Guides & Quick Start">
+  <meta property="og:description" content="Step-by-step tutorials and quick start guide for ZBackup backup manager.">
+  <meta property="og:image" content="image/logo.png">
+  <meta property="og:url" content="https://kirobotdev.github.io/zbackup/learn.html">
+  <meta property="og:site_name" content="ZBackup">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Learn ZBackup">
+  <meta name="twitter:description" content="Tutorials and guides for the ZBackup backup manager.">
+  <meta name="theme-color" content="#0D0F0B">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Learn ZBackup",
+    "description": "Tutorials, guides, and quick start for ZBackup backup manager.",
+    "url": "https://kirobotdev.github.io/zbackup/learn.html",
+    "educationalLevel": "Beginner to Advanced",
+    "teaches": "Backup management with ZBackup"
+  }
+  </script>
+</head>
+<body id="learn-page">
+
+  <header>
+    <div class="header-inner">
+      <a id="logo-link" href="index.html">
+        <img src="image/logo.png" alt="ZBackup" id="header-logo">
+        <span id="header-title">ZBackup</span>
+      </a>
+      <span id="tagline">--backup-made-easy</span>
+      <nav id="main-nav">
+        <a href="about.html">About</a>
+        <a href="learn.html" class="active">Learn</a>
+        <a href="tools.html">Tools</a>
+        <a href="reference.html">Reference</a>
+        <a href="install.html">Install</a>
+        <a href="community.html">Community</a>
+      </nav>
+      <div id="search-container">
+        <form id="search"><input id="search-text" type="text" placeholder="Type / to search..." autocomplete="off"></form>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <div class="page-banner-inner">
+      <h1>Learn ZBackup</h1>
+      <p class="page-subtitle">Guides and tutorials to get you started with ZBackup.</p>
+    </div>
+  </div>
+
+  <div id="content-wrapper">
+    <div class="page-content">
+
+      <section class="content-section">
+        <h2>Quick Start</h2>
+        <div class="code-block">
+          <div class="code-header">
+            <span>Get up and running in 3 steps</span>
+          </div>
+<pre><code># 1. Clone the repository
+git clone https://github.com/KirobotDev/zbackup.git
+cd zbackup
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run ZBackup
+python main.py</code></pre>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Core Concepts</h2>
+        <div class="concept-cards">
+          <div class="concept-card">
+            <h3>Creating Backups</h3>
+            <p>
+              ZBackup compresses your selected files and directories into a standard
+              <code>.zip</code> archive. Each backup is stored with a timestamp and can
+              be restored at any time.
+            </p>
+            <div class="code-block mini">
+<pre><code>python main.py
+# Select "Create Backup" from the menu</code></pre>
+            </div>
+          </div>
+
+          <div class="concept-card">
+            <h3>Listing Backups</h3>
+            <p>
+              View all your existing backups with details like date, size, and name.
+              This helps you quickly find the backup you need to restore.
+            </p>
+            <div class="code-block mini">
+<pre><code>python main.py
+# Select "List Backups" from the menu</code></pre>
+            </div>
+          </div>
+
+          <div class="concept-card">
+            <h3>Restoring Backups</h3>
+            <p>
+              Choose a backup from the list and ZBackup will extract all files to
+              their original structure. A safe way to undo mistakes.
+            </p>
+            <div class="code-block mini">
+<pre><code>python main.py
+# Select "Restore Backup" then pick a backup</code></pre>
+            </div>
+          </div>
+
+          <div class="concept-card">
+            <h3>Deleting Backups</h3>
+            <p>
+              Remove backups you no longer need. ZBackup will ask for confirmation
+              before permanently deleting any backup file.
+            </p>
+            <div class="code-block mini">
+<pre><code>python main.py
+# Select "Delete Backup" then pick a backup</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Tutorials</h2>
+        <div class="tutorials-grid">
+          <div class="tutorial-card">
+            <span class="tutorial-tag beginner">Beginner</span>
+            <h3>Your First Backup</h3>
+            <p>Step-by-step guide to creating your very first backup with ZBackup from scratch.</p>
+            <a href="reference.html" class="tutorial-link">Read the guide &rarr;</a>
+          </div>
+          <div class="tutorial-card">
+            <span class="tutorial-tag beginner">Beginner</span>
+            <h3>Understanding the CLI</h3>
+            <p>Learn how the interactive terminal interface works and how to navigate the menus.</p>
+            <a href="reference.html" class="tutorial-link">Read the guide &rarr;</a>
+          </div>
+          <div class="tutorial-card">
+            <span class="tutorial-tag intermediate">Intermediate</span>
+            <h3>Automating Backups</h3>
+            <p>Set up scheduled backups using cron (Linux) or Task Scheduler (Windows).</p>
+            <a href="reference.html" class="tutorial-link">Read the guide &rarr;</a>
+          </div>
+          <div class="tutorial-card">
+            <span class="tutorial-tag advanced">Advanced</span>
+            <h3>Contributing to ZBackup</h3>
+            <p>Learn the project structure and how to contribute new features or fix bugs.</p>
+            <a href="community.html" class="tutorial-link">Read the guide &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Video Tutorials</h2>
+        <p>Video tutorials are coming soon. Stay tuned for walkthroughs covering every ZBackup feature.</p>
+      </section>
+
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-left">
+          <a href="https://github.com/KirobotDev/zbackup">GitHub</a>
+          <span class="footer-sep">|</span>
+          <a href="community.html">Community</a>
+        </div>
+        <div class="footer-right">
+          <span>ZBackup is open source software under the MIT License</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/js/version.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

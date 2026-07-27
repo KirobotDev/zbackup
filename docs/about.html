@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About ZBackup - Features, Technologies &amp; Roadmap</title>
+  <meta name="description" content="Learn about ZBackup: a lightweight open-source backup manager written in Python. Discover current features, planned improvements, and the technologies powering ZBackup.">
+  <meta name="keywords" content="ZBackup about, backup features, Python backup tool, open source backup, version control, ZIP backup, cross-platform">
+  <meta name="author" content="KirobotDev">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kirobotdev.github.io/zbackup/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About ZBackup - Features, Technologies & Roadmap">
+  <meta property="og:description" content="Learn about ZBackup: lightweight open-source backup manager with version control.">
+  <meta property="og:image" content="image/logo.png">
+  <meta property="og:url" content="https://kirobotdev.github.io/zbackup/about.html">
+  <meta property="og:site_name" content="ZBackup">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="About ZBackup">
+  <meta name="twitter:description" content="Lightweight open-source backup manager with version control.">
+  <meta name="theme-color" content="#0D0F0B">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About ZBackup",
+    "description": "Learn about ZBackup features, technologies, and roadmap.",
+    "url": "https://kirobotdev.github.io/zbackup/about.html",
+    "mainEntity": {
+      "@type": "SoftwareApplication",
+      "name": "ZBackup",
+      "url": "https://github.com/KirobotDev/zbackup"
+    }
+  }
+  </script>
+</head>
+<body id="about-page">
+
+  <header>
+    <div class="header-inner">
+      <a id="logo-link" href="index.html">
+        <img src="image/logo.png" alt="ZBackup" id="header-logo">
+        <span id="header-title">ZBackup</span>
+      </a>
+      <span id="tagline">--backup-made-easy</span>
+      <nav id="main-nav">
+        <a href="about.html" class="active">About</a>
+        <a href="learn.html">Learn</a>
+        <a href="tools.html">Tools</a>
+        <a href="reference.html">Reference</a>
+        <a href="install.html">Install</a>
+        <a href="community.html">Community</a>
+      </nav>
+      <div id="search-container">
+        <form id="search"><input id="search-text" type="text" placeholder="Type / to search..." autocomplete="off"></form>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <div class="page-banner-inner">
+      <h1>About ZBackup</h1>
+      <p class="page-subtitle">A lightweight, fast and open-source backup manager written in Python.</p>
+    </div>
+  </div>
+
+  <div id="content-wrapper">
+    <div class="page-content">
+
+      <section class="content-section">
+        <h2>What is ZBackup?</h2>
+        <p>
+          ZBackup is a lightweight and open-source backup utility written in Python.
+          It allows you to create, restore, and manage backups directly from the terminal
+          with a simple and intuitive interface.
+        </p>
+        <p>
+          The project is currently under active development and will continue to evolve
+          with new features such as encryption, incremental backups, cloud synchronization,
+          and much more.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2>Current Features</h2>
+        <div class="features-list">
+          <div class="feature-item">
+            <span class="feature-check">&#10003;</span>
+            <div>
+              <h3>Create ZIP Backups</h3>
+              <p>Compress your project files into standard ZIP archives for easy storage and portability.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-check">&#10003;</span>
+            <div>
+              <h3>List Available Backups</h3>
+              <p>Browse all your existing backups with metadata including date, size, and name.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-check">&#10003;</span>
+            <div>
+              <h3>Restore Backups</h3>
+              <p>Restore any backup with a single command. Files are extracted exactly as they were saved.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-check">&#10003;</span>
+            <div>
+              <h3>Delete Backups</h3>
+              <p>Clean up old backups you no longer need to free up disk space.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-check">&#10003;</span>
+            <div>
+              <h3>Windows &amp; Linux Support</h3>
+              <p>ZBackup runs natively on both Windows and Linux with automatic OS detection.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-check">&#10003;</span>
+            <div>
+              <h3>Interactive Terminal Interface</h3>
+              <p>A guided, colorized CLI experience that makes backup management effortless.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Planned Features</h2>
+        <div class="features-list">
+          <div class="feature-item planned">
+            <span class="feature-check">&#9881;</span>
+            <div>
+              <h3>Backup Encryption</h3>
+              <p>Encrypt your backups to keep your data secure at rest.</p>
+            </div>
+          </div>
+          <div class="feature-item planned">
+            <span class="feature-check">&#9881;</span>
+            <div>
+              <h3>Incremental Backups</h3>
+              <p>Only backup files that have changed since the last backup.</p>
+            </div>
+          </div>
+          <div class="feature-item planned">
+            <span class="feature-check">&#9881;</span>
+            <div>
+              <h3>Cloud Storage</h3>
+              <p>Sync your backups to cloud providers for off-site protection.</p>
+            </div>
+          </div>
+          <div class="feature-item planned">
+            <span class="feature-check">&#9881;</span>
+            <div>
+              <h3>Backup Scheduler</h3>
+              <p>Automatically run backups on a schedule you define.</p>
+            </div>
+          </div>
+          <div class="feature-item planned">
+            <span class="feature-check">&#9881;</span>
+            <div>
+              <h3>GUI Version</h3>
+              <p>A graphical user interface for those who prefer visual tools.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Built With</h2>
+        <div class="tech-table">
+          <table>
+            <thead>
+              <tr><th>Technology</th><th>Purpose</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Python</td><td>Main language</td></tr>
+              <tr><td>pathlib</td><td>Path management</td></tr>
+              <tr><td>shutil</td><td>Backup creation</td></tr>
+              <tr><td>zipfile</td><td>Archive extraction</td></tr>
+              <tr><td>questionary</td><td>Interactive CLI</td></tr>
+              <tr><td>colorama</td><td>Terminal colors</td></tr>
+              <tr><td>platform</td><td>OS detection</td></tr>
+              <tr><td>sqlite3</td><td>Future metadata storage</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>License</h2>
+        <p>
+          ZBackup is licensed under the <strong>MIT License</strong>. You are free to use,
+          modify, and distribute this software. The only requirement is to include the
+          original copyright notice and the MIT License.
+        </p>
+        <p>
+          See the <a href="https://github.com/KirobotDev/zbackup/blob/main/LICENSE" target="_blank">LICENSE file</a> on GitHub for full details.
+        </p>
+      </section>
+
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-left">
+          <a href="https://github.com/KirobotDev/zbackup">GitHub</a>
+          <span class="footer-sep">|</span>
+          <a href="community.html">Community</a>
+        </div>
+        <div class="footer-right">
+          <span>ZBackup is open source software under the MIT License</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/js/version.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
