@@ -136,6 +136,7 @@ Coming soon...
 * [x] Backup creation
 * [x] Backup restoration
 * [x] Backup deletion
+* [ ] zignore For choices ignore specify files
 * [ ] Encryption
 * [ ] Incremental backups
 * [ ] Backup scheduler
@@ -156,7 +157,7 @@ Coming soon...
 
 <p align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=KirobotDev&repo=zbackup&theme=transparent">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=KirobotDev&repo=ZBackup&theme=transparent">
 
 </p>
 

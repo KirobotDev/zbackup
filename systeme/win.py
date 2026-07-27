@@ -26,7 +26,7 @@ def create():
     )
     shutil.move(
         archive,
-        f"C:\zbackup\{nombcp}.zip"
+        f"C:\\zbackup\\{nombcp}.zip"
         )
 
 def lists():
