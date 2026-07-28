@@ -2,7 +2,7 @@
   <img src="image/logoa.png" width="220" alt="ZBackup Logo">
 </p>
 
-<h1 align="center">ZBackup</h1>
+<h1 align="center">ZBackup V-0.3</h1>
 
 <p align="center">
   <strong>A lightweight, fast and open-source backup manager written in Python.</strong>
