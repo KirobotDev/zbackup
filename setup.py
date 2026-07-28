@@ -11,7 +11,7 @@ def setup():
         print("Installation Windows Terminé")
         time.sleep(2)
     elif platform.system() == "Linux":
-        os.mkdir("/home/xql/.zbackup")
+        os.mkdir("/home/zbc/.zbackup")
         time.sleep(2)
         print("Installation Linux Terminé")
         time.sleep(2)

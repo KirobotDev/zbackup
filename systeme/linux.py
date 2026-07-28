@@ -11,7 +11,7 @@ from setup import setup
 import shutil
 import zipfile
 
-dossier = "/home/xql/.zbackup"
+dossier = "/home/zbc/.zbackup"
 
 def create():
     # REVIEW - Ajouté une gestion d'erreur si besoin en tant que dev principale pour le moment j'en vois pas l'utilité les module font bien leur travailles.
@@ -26,7 +26,7 @@ def create():
     )
     shutil.move(
         archive,
-        f"/home/xql/.zbackup/{nombcp}.zip"
+        f"/home/zbc/.zbackup/{nombcp}.zip"
         )
 
 def lists():
@@ -42,7 +42,7 @@ def restore():
     restore = input("Met le nom du fichier que tu veux recupèrer : ")
 
     if restore in element:
-        fichierzip = f"/home/xql/.zbackup/{restore}"
+        fichierzip = f"/home/zbc/.zbackup/{restore}"
         destination = getcwd()
 
         with zipfile.ZipFile(fichierzip, 'r') as zip_ref:
@@ -60,7 +60,7 @@ def delt():
     delete = input("Met le nom du fichier que tu veux supprimé : ")
 
     if delete in element:
-        fichierzip = f"/home/xql/.zbackup/{delete}"
+        fichierzip = f"/home/zbc/.zbackup/{delete}"
 
         try:
             os.remove(fichierzip)
@@ -71,7 +71,7 @@ def delt():
 
 def linux() -> str:
     while True:
-        dossier = "/home/xql/.zbackup"
+        dossier = "/home/zbc/.zbackup"
 
         if os.path.isdir(dossier):
             choix = questionary.select(
